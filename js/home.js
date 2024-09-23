@@ -15,7 +15,7 @@ document.getElementById('donation-btn').addEventListener('click', function(event
         document.getElementById('donation-card-balance').innerText = newCardBalance;
         document.getElementById('main-balance').innerText = newMainBalance;
 
-        inputValue.valueOf = '';
+        inputValue.value = "";
     }
     else {
         alert('You do not have sufficient balance.')
