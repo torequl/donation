@@ -7,6 +7,17 @@
     <title>Donation | Assignment-5</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,14 +25,15 @@
     <header>
         <!-- Navbar Start -->
         <nav class="w-[90%] mx-auto py-4 flex justify-between items-center">
-            <button onclick="window.location.href = '/blog.html'" class="font-bold bg-[#B4F461] px-6 py-3 rounded-md">Blog</button>
+            <button onclick="window.location.href = '/blog.html'"
+                class="font-bold bg-[#B4F461] px-6 py-3 rounded-md">Blog</button>
             <div class="flex items-center gap-4">
                 <img src="./assets/logo.png" alt="logo">
                 <h3 class="hidden md:block text-2xl font-bold">Donation Bangladesh</h3>
             </div>
             <div class="flex items-center bg-slate-100 gap-2 p-2 rounded-lg">
                 <img src="./assets/coin.png" alt="coin">
-                <h4 class="font-bold text-lg"><span id="main-balance">550</span> BDT</h4>
+                <h4 class="font-bold text-lg"><span id="main-balance">1250</span> BDT</h4>
             </div>
         </nav>
         <!-- Navbar End -->
@@ -34,43 +46,106 @@
     </header>
 
     <main class="w-11/12 mx-auto mt-10">
-        <!-- Card - 1 -->
-        <section id="donation-card-section" class="flex flex-col md:flex-row justify-center gap-6">
-            <!-- Card Image -->
-            <div>
-                <img src="./assets/noakhali.png" alt="">
-            </div>
-            <!-- Card Information -->
-            <div class="flex flex-col w-full lg:w-5/12 items-baseline justify-around gap-4">
-                <div class="items-center bg-slate-100 gap-2 p-2 rounded-lg justify-center inline-flex">
-                    <img src="./assets/coin.png" alt="coin">
-                    <h4 class="font-bold"><span id="donation-card-balance">550</span> BDT</h4>
-                </div>
+        <section id="donation-card-section" class="space-y-16">
+            <!-- Card - 1 -->
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <!-- Card Image -->
                 <div>
-                    <h3 class="font-bold text-lg">Lorem ipsum dolor sit amet consectetur.</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vero iure minima quod in.
-                        Aliquid repellendus animi saepe quos adipisci, et nesciunt! Repudiandae ad et ipsa quia quasi
-                        molestiae voluptates sunt cum ducimus, amet impedit suscipit magnam accusamus cupiditate
-                        nesciunt nihil esse in fugit repellat accusantium eaque nemo maiores eius.</p>
+                    <img src="./assets/noakhali.png" alt="">
                 </div>
-                <!-- card Input filed -->
-                <form class="space-y-4 w-full">
-                    <input type="number" placeholder="Donation Amount" id="donation-input" class="input input-bordered w-full" />
-                    <button id="donation-btn" class="btn w-full bg-[#B4F461]">Donate Now</button>
-                </form>
+                <!-- Card Information -->
+                <div class="flex flex-col w-full lg:w-5/12 items-baseline justify-around gap-4">
+                    <div class="items-center bg-slate-100 gap-2 p-2 rounded-lg justify-center inline-flex">
+                        <img src="./assets/coin.png" alt="coin">
+                        <h4 class="font-bold"><span id="donation-card-balance">250</span> BDT</h4>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 id="donation-heading" class="font-bold text-2xl">Donate for Flood at Noakhali, Bangladesh
+                        </h3>
+                        <p>The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                            donation will help provide essential supplies and to those affected by this disaster. Every
+                            contribution, big or small, makes difference. Please join us in supporting the relief
+                            efforts and making a positive impact on the lives of those in need.</p>
+                    </div>
+                    <!-- card Input filed -->
+                    <form class="space-y-4 w-full">
+                        <input type="text" placeholder="Donation Amount" id="donation-input"
+                            class="input input-bordered w-full" />
+                        <button id="donation-btn-1" class="btn w-full bg-[#B4F461]">Donate Now</button>
+                    </form>
+                </div>
             </div>
+
+            <!-- Card - 2  -->
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <!-- Card Image -->
+                <div>
+                    <img src="./assets/quota-protest.png" alt="">
+                </div>
+                <!-- Card Information -->
+                <div class="flex flex-col w-full lg:w-5/12 items-baseline justify-around gap-4">
+                    <div class="items-center bg-slate-100 gap-2 p-2 rounded-lg justify-center inline-flex">
+                        <img src="./assets/coin.png" alt="coin">
+                        <h4 class="font-bold"><span id="donation-card-balance-2">100</span> BDT</h4>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 id="donation-heading-2" class="font-bold text-2xl">Donate for Injured in the Quota Movement for Aid.
+                        </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vero iure minima quod in.
+                            Aliquid repellendus animi saepe quos adipisci, et nesciunt! Repudiandae ad et ipsa quia
+                            quasi
+                            molestiae voluptates sunt cum ducimus, amet impedit suscipit magnam accusamus cupiditate
+                            nesciunt nihil esse in fugit repellat accusantium eaque nemo maiores eius.</p>
+                    </div>
+                    <!-- card Input filed -->
+                    <form class="space-y-4 w-full">
+                        <input type="text" placeholder="Donation Amount" id="donation-input-2"
+                            class="input input-bordered w-full" />
+                        <button id="donation-btn-2" class="btn w-full bg-[#B4F461]">Donate Now</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Card - 3 -->
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <!-- Card Image -->
+                <div>
+                    <img src="./assets/feni.png" alt="">
+                </div>
+                <!-- Card Information -->
+                <div class="flex flex-col w-full lg:w-5/12 items-baseline justify-around gap-4">
+                    <div class="items-center bg-slate-100 gap-2 p-2 rounded-lg justify-center inline-flex">
+                        <img src="./assets/coin.png" alt="coin">
+                        <h4 class="font-bold"><span id="donation-card-balance-3">200</span> BDT</h4>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 id="donation-heading-3" class="font-bold text-2xl">Donate for Flood Relief in Feni,Bangladesh.
+                        </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vero iure minima quod in.
+                            Aliquid repellendus animi saepe quos adipisci, et nesciunt! Repudiandae ad et ipsa quia
+                            quasi
+                            molestiae voluptates sunt cum ducimus, amet impedit suscipit magnam accusamus cupiditate
+                            nesciunt nihil esse in fugit repellat accusantium eaque nemo maiores eius.</p>
+                    </div>
+                    <!-- card Input filed -->
+                    <form class="space-y-4 w-full">
+                        <input type="text" placeholder="Donation Amount" id="donation-input-3"
+                            class="input input-bordered w-full" />
+                        <button id="donation-btn-3" class="btn w-full bg-[#B4F461]">Donate Now</button>
+                    </form>
+                </div>
+            </div>
+
         </section>
 
-
         <!-- History Section -->
-         <section id="history-section" class="hidden flex flex-col items-center gap-4">
-            <div class="inline-block p-5 rounded-md bg-lime-100">
-                <h2>96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
-                <p>Date : Tue Sep 17 2024 08:39:11 GMT +06 (Bangladesh Standard Time)</p>
-            </div>
-            
-         </section>
+        <section id="history-section" class="hidden flex flex-col items-center gap-4">
+        </section>
     </main>
+
+    <footer class="h-24 bg-[#B4F461] mx-auto mt-52 grid place-items-center">
+        <p class="font-bold">Copyright &copy; Donation Bangladesh 2024</p>
+    </footer>
 
 
     <script src="./js/features.js"></script>
