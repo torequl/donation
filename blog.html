@@ -36,6 +36,80 @@
             </div>
         </nav>
     </header>
+
+    <main class="w-10/12 mx-auto mt-24">
+        <h1 class="font-bold text-4xl mb-6">What Is Document Object Model (DOM) ?</span></h1>
+
+        <!-- Accordion  -->
+        <div class="space-y-4 w-full md:w-7/12">
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>The <span class="text-bold">Document Object Model (DOM)</span> is a programming interface for web
+                        documents. It represents the structure of a document as a tree of objects, allowing programs to
+                        interact with and manipulate the document’s content, structure, and style.</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>To select an element from the DOM, you can use methods like:</p>
+                    <p>getElementById: Selects an element by its unique ID.</p>
+                    <div class="mockup-code mb-4">
+                        <pre data-prefix=">>"><code>document.getElementById("elementId")</code></pre>
+                    </div>
+
+                    <p>querySelector: Selects the first element that matches a CSS selector.</p>
+                    <div class="mockup-code mb-4">
+                        <pre data-prefix=">>"><code>document.querySelector(".className");</code></pre>
+                    </div>
+
+                    <p>querySelectorAll: Selects all elements that match a CSS selector.</p>
+                    <div class="mockup-code mb-4">
+                        <pre data-prefix=">>"><code>document.querySelectorAll("div");</code></pre>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                    <p> <span class="font-bold">Event delegation</span> is a technique in the DOM where a single event listener is added to a parent element instead of multiple listeners to individual child elements. This leverages event bubbling, where events propagate up the DOM tree</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                    <p>To manipulate an element’s attributes and styles using the DOM:</p>
+                    <br>
+                    <p><span class="font-bold">Attributes:</span> Use setAttribute and getAttribute.</p>
+                    <div class="mockup-code mb-4">
+                        <pre data-prefix=">>"><code>element.setAttribute("attributeName", "value");</code></pre>
+                        <pre data-prefix=">>"><code>let value = element.getAttribute("attributeName");</code></pre>
+                    </div>
+
+                    <p><span class="font-bold">Styles:</span> Use the style property.</p>
+                    <div class="mockup-code mb-4">
+                        <pre data-prefix=">>"><code>element.style.propertyName = "value";</code></pre>
+                    </div>
+
+                    <p>For example, to change the src attribute of an image and its width:</p>
+                    <div class="mockup-code mb-4 w-6/12">
+                        <pre data-prefix=">>"><code>let img = document.querySelector("img");</code></pre>
+                        <pre data-prefix=">>"><code>img.setAttribute("src", "newImage.jpg");</code></pre>
+                        <pre data-prefix=">>"><code>img.style.width = "200px";</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
